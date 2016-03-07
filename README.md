@@ -16,7 +16,7 @@ npm install
 
 Then we will 
 
-- compile our TypeScript code and
+- compile the TypeScript code and
 - host the app on local development server 
 
 by running the command:
