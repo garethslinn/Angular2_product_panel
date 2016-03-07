@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Angular 2 - product panel</title>
+    <link rel="icon" type="image/png" href="resources/images/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" href="resources/images/favicon.ico" />
+    <!-- Libraries -->
+    <script src="node_modules/es6-shim/es6-shim.js"></script>
+    <script src="node_modules/angular2/bundles/angular2-polyfills.js"></script>
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
+    <script src="node_modules/rxjs/bundles/Rx.js"></script>
+    <script src="node_modules/angular2/bundles/angular2.dev.js"></script>
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="src/css/bootstrap.min.css">
+    <link rel="stylesheet" href="src/css/custom.css">
+  </head>
+  <body>
+
+    <!-- Configure System.js, our module loader -->
+    <script>
+      System.config({
+        packages: {
+          app: {
+            format: 'register',
+            defaultExtension: 'js'
+          }
+        }
+      });
+      System.import('app.js')
+            .then(null, console.error.bind(console));
+    </script>
+
+    <!-- Menu Bar -->
+
+    <h1 class="panel panel-default">
+      <div class="panel-heading">Products</div>
+      <div class="panel-body">
+        <productApp></productApp>
+      </div>
+    </div>
+
+  </body>
+</html>
